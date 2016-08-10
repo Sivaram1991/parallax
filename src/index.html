@@ -1,0 +1,129 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+ <head>
+  <title> new document </title>
+  <meta name="generator" content="editplus">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <style type="text/css">
+	body, html, p, h1, h2, h3, h4, h5, h6, div{
+		margin:0px;
+		padding:0px;
+	}
+	.wrapper{
+		width:100%;
+		margin:0px auto;
+	}
+	.parallax_back p{
+		font: bold 24px/30px Arial;
+		color:red;
+	}
+	.parallax_base p{
+		font: bold 24px/30px Arial;
+		color:green;
+	}
+	.parallax_deep p{
+		font: bold 24px/30px Arial;
+		color:yellow;
+	}
+	.parallax_fore p{
+		font: bold 24px/30px Arial;
+		color:blue;
+	}
+	.parallax{
+		perspective:300px;
+		-webkit-perspective : 300px;
+		height: 100vh;
+		overflow-x:hidden;
+		overflow-y:auto;
+	}
+	.parallax_back{
+		transform:translateZ(-1px) scale(2);
+		-webkit-transform:translateZ(-1px) scale(2);
+	}
+	.parallax_base{
+		transform:translateZ(0) scale(1);
+		-webkit-transform:translateZ(0) scale(1);
+	}
+	.parallax_layer{
+		position:absolute;
+		top:0px;
+		bottom:0px;
+		left:0px;
+		right:0px;
+		padding:100vh 0;
+	}
+	.title{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+	}
+	.group1{
+		z-index:5;
+	}
+	.group2{
+		z-index:4;
+	}
+	.group3{
+		z-index:5;
+	}
+	.group4{
+		z-index:3;
+	}
+	.parallax-group{
+		position:relative;
+		height: 100vh;
+		transform-style: preserve-3d;
+ /* transform: translate3d(700px, 0, -800px) rotateY(30deg);*/
+	}
+
+
+  </style>
+ </head>
+
+ <body>
+  <div class="wrapper">
+	<div class="parallax">
+		<div id="" class="group1 parallax-group">
+			<div id="" class=" parallax_layer parallax_base">
+					<p class="title">Group-1 Base layer</p>
+			</div>
+		</div>
+		<div id="" class="group2 parallax-group">
+			<div id="" class="parallax_layer parallax_back">
+				<p class="title">Group-2 Backgroud</p>
+			</div>
+			<div id="" class="parallax_layer parallax_base">
+					<p class="title">Group-2 Base layer</p>
+			</div>
+		</div>
+		<div id="" class="group3 parallax-group">
+			<div id="" class="parallax_layer parallax_back">
+				<p class="title">Group-3 Backgroud</p>
+			</div>
+			<div id="" class=" parallax_layer parallax_fore">
+					<p class="title">Group-3 Baselayer</p>
+			</div>
+			<div id="" class=" parallax_layer parallax_deep">
+					<p class="title">Group-3 Deep background layer</p>
+			</div>
+			</div>
+			<div id="" class=" parallax_layer parallax_base">
+					<p class="title">Group-3 Baselayer</p>
+			</div>
+		</div>
+		<div id="" class="group4 parallax-group">
+			<div id="" class="parallax_layer parallax_back">
+				<p class="title">Group-4 Backgroud</p>
+			</div>
+			<div id="" class=" parallax_layer parallax_base">
+					<p class="title">Group-4 Baselayer</p>
+			</div>
+		</div>
+	</div>
+  </div>
+ </body>
+</html>

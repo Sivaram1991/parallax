@@ -1,0 +1,27 @@
+/*Css Styles*/
+body, div, p, ul ,li, img{
+	padding:0px;
+	margin:0px;
+}
+img{
+	border:0 none;
+	max-width:100%;
+	height:auto;
+}
+
+.wrapper{
+	width:100%;
+	margin:10px auto;
+	border:2px solid red;
+	height:auto;
+}
+.image-container{
+	width:100%;float:left;
+}
+.img-width{
+	width:300px;margin:0px 10px;
+}
+
+.left{
+	float:left;
+}
